@@ -25,7 +25,10 @@ btn.addEventListener("click", addTask);
 
 tasklist.addEventListener("click", function (e) {
     if (e.target.tagName === "LI") {
+
+        // Toggle task completion state
         e.target.classList.toggle("checked");
+
         setTask();
     } else if (e.target.tagName === "SPAN"){
         e.target.parentElement.remove(); 
