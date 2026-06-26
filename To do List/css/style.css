@@ -25,3 +25,43 @@
     text-decoration: line-through;
     color: #888;
 }
+
+/* الطالبة 6: feature/js-add-task
+   المهمة: تنسيق الإدخال، الزر، وعناصر القائمة
+    */
+   .todo-list .row { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    margin-bottom: 25px; 
+}
+.todo-list .row input { 
+    background-color: var(--light-gray); 
+    border: none; 
+    outline: none; 
+    padding: 15px; 
+    width: 80%; 
+    border-radius: 5px; 
+    font-size: 14px; 
+}
+.todo-list .row .btn { 
+    border: none; 
+    background-color: var(--green); 
+    color: #fff; 
+    border-radius: 5px; 
+    padding: 12px 30px; 
+    cursor: pointer; 
+}
+.todo-list ul li { 
+    list-style: none; 
+    font-size: 18px; 
+    padding: 12px 8px 12px 50px; 
+    position: relative; 
+}
+.todo-list ul li span { 
+    position: absolute; 
+    right: 15px; 
+    top: 5px; 
+    cursor: pointer; 
+    font-size: 25px; 
+}
