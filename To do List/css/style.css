@@ -1,4 +1,42 @@
-.todo-list ul li {
+.todo-list {
+    background-color: #fff;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-list .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.todo-list .title img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.todo-list .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.todo-list .title img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+     
+     
+     
+     
+     
+     
+     
+     .todo-list ul li {
     position: relative;
     padding: 12px 8px 12px 40px;
     cursor: pointer;
@@ -6,7 +44,7 @@
 
 /* تنسيق الأيقونة قبل التفعيل */
 .todo-list ul li::before {
-    content: "";
+    content: "";  
     position: absolute;
     top: 9px;
     left: 10px;
