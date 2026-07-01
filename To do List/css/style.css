@@ -1,4 +1,42 @@
-.todo-list ul li {
+.todo-list {
+    background-color: #fff;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-list .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.todo-list .title img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.todo-list .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.todo-list .title img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+     
+     
+     
+     
+     
+     
+     
+     .todo-list ul li {
     position: relative;
     padding: 12px 8px 12px 40px;
     cursor: pointer;
@@ -6,7 +44,7 @@
 
 /* تنسيق الأيقونة قبل التفعيل */
 .todo-list ul li::before {
-    content: "";
+    content: "";  
     position: absolute;
     top: 9px;
     left: 10px;
@@ -24,4 +62,44 @@
 .todo-list ul li.checked {
     text-decoration: line-through;
     color: #888;
+}
+
+/* الطالبة 6: feature/js-add-task
+   المهمة: تنسيق الإدخال، الزر، وعناصر القائمة
+    */
+   .todo-list .row { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    margin-bottom: 25px; 
+}
+.todo-list .row input { 
+    background-color: var(--light-gray); 
+    border: none; 
+    outline: none; 
+    padding: 15px; 
+    width: 80%; 
+    border-radius: 5px; 
+    font-size: 14px; 
+}
+.todo-list .row .btn { 
+    border: none; 
+    background-color: var(--green); 
+    color: #fff; 
+    border-radius: 5px; 
+    padding: 12px 30px; 
+    cursor: pointer; 
+}
+.todo-list ul li { 
+    list-style: none; 
+    font-size: 18px; 
+    padding: 12px 8px 12px 50px; 
+    position: relative; 
+}
+.todo-list ul li span { 
+    position: absolute; 
+    right: 15px; 
+    top: 5px; 
+    cursor: pointer; 
+    font-size: 25px; 
 }
