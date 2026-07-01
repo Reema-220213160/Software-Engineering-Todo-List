@@ -22,9 +22,20 @@ function addTask() {
     
     // تفريغ الحقل بعد الانتهاء
     inputTask.value = "";
-    
-    // استدعاء دالة الحفظ للتحديث الفوري في حال وجودها لدى الطالبة 9
-    if (typeof setTask === "function") {
+    setTask();
+}
+
+btn.addEventListener("click", addTask);
+
+tasklist.addEventListener("click", function (e) {
+    if (e.target.tagName === "LI") {
+
+        // Toggle task completion state
+        e.target.classList.toggle("checked");
+
+        setTask();
+    } else if (e.target.tagName === "SPAN"){
+        e.target.parentElement.remove(); 
         setTask();
     }
 }
