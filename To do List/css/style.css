@@ -1,3 +1,29 @@
+/* ==========================================
+   الطالبة 4: feature/css-list-items
+   المهمة: إعدادات الجذور وCSS العام للمشروع
+   ========================================== */
+   :root { 
+    --gray: #333; 
+    --green: #4bae4f; 
+    --light-gray: #edeef0; 
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body { 
+    font-family: "Poppins", sans-serif; 
+}
+
+.container { 
+    min-height: 100vh; 
+    background-color: var(--gray); 
+    padding: 10px; 
+}
+/*............*/
 .todo-list {
     background-color: #fff;
     max-width: 540px;
